@@ -1,0 +1,14 @@
+<div class="card card-main">
+  <div class="img-container">
+    <div *ngIf="card?.imageUrl; else elseBlock">
+      <img src="{{ card?.imageUrl }}" class="card-img-top" alt="" />
+    </div>
+    <ng-template #elseBlock><p class="no-img">No Image</p></ng-template>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{ card?.name }}</h5>
+    <p class="card-text">
+      {{ card?.text }}
+    </p>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+.img-container {
+    background-color: lightgrey;
+    min-height: 400px;
+}
+
+.no-img {
+    margin-top: 175px;
+    text-align: center;
+}
+
+.card-main {
+    width: 18rem;
+    min-height: 600px
+}

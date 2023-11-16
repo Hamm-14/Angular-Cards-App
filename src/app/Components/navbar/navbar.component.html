@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Elder Scrolls</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <button class="bg-transparent" (click)="reload()">Home</button>
+          </li>
+        </ul>
+        <form class="d-flex" role="search" for="name" (ngSubmit)="onSubmit()">
+          <input
+            class="form-control me-2"
+            [(ngModel)]="search"
+            type="search"
+            id="name"
+            name="name"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
